@@ -43,6 +43,31 @@
 	"features": {
 		"docker-in-docker": "latest",
 		"git": "os-provided",
-		"github-cli": "latest"
+		"github-cli": "latest",
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"version": "latest",
+			"bicepVersion": "latest"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
+			"version": "20.10",
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/java:1": {
+			"installMaven": true,
+			"version": "17",
+			"jdkDistro": "ms",
+			"gradleVersion": "latest",
+			"mavenVersion": "latest",
+			"antVersion": "latest",
+			"groovyVersion": "latest"
+		}
 	}
 }
